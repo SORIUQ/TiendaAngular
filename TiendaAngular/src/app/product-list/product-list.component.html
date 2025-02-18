@@ -19,14 +19,6 @@
     <p *ngIf="product.stock <= 4">
       AVISO, EL PRODUCTO TIENE MENOS O 4 DE STOCK -> TIENE: {{product.stock}}
     </p>
-    <!-- Si no tiene caracteristicas no lo muestra -->
-    <p *ngIf="product.caracteristicas" >
-      Caracteristicas: {{product.caracteristicas}}
-    </p>
-    <!-- Si el producto no tiene garantia no se muestra -->
-    <p *ngIf="product.garantia">
-      La garantia tiene un período de {{product.garantia.periodo}} y es de tipo {{product.garantia.tipo}}
-    </p>
 
     <button type="button" (click)="share()">
       Share
